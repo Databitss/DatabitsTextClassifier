@@ -52,3 +52,5 @@ class LoaderData:
         else:
             x = F.pad(x, (0, self.seq - len(x)), value=self.padding_idx)
         return x.unsqueeze(0)
+
+
