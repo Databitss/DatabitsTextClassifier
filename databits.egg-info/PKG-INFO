@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: databits
+Version: 1.0.1
+Summary: Text Classifier using LSTM, GRU, and Transformer BERT
+Home-page: https://github.com/Databitss/databits/
+Author: Databits Team
+Author-email: databitsteam@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Linguistic
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Text Classifier using LSTM, GRU, and Transformer BERT
+
+
