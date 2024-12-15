@@ -1,0 +1,2 @@
+torchtext==0.17.0
+bitsandbytes==0.40.2
