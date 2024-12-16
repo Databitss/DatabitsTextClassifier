@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: databits
-Version: 1.0.2
+Version: 1.0.3
 Summary: Text Classifier using LSTM, GRU, and Transformer BERT
 Home-page: https://github.com/Databitss/databits/
 Author: Databits Team
@@ -45,7 +45,7 @@ EPOCHS = 5
 EMBED_DIM = 512
 N_LAYERS = 2
 DROPOUT_RATE = 0.1
-NUM_CLASSES = np.unique(np.array(y_train))
+NUM_CLASSES = len(np.unique(np.array(y_train)))
 OPTIMIZER = torch.optim.Adam
 LR = 0.001
 LOSS = nn.CrossEntropyLoss
