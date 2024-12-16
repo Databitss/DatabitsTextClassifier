@@ -6,7 +6,7 @@ def read_requirements(filename):
 
 setup(
     name='databits',  # Ganti dengan nama package kamu
-    version='1.0.1',    # Ganti dengan versi yang sesuai
+    version='1.0.2',    # Ganti dengan versi yang sesuai
     packages=find_packages(),  # Menemukan semua package dalam folder
     install_requires=read_requirements('requirements.txt'),  # Daftar dependensi yang dibutuhkan
     long_description=open('README.md').read(),  # Mengambil deskripsi panjang dari README
