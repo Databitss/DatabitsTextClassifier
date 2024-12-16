@@ -10,7 +10,7 @@ Prepare the data X_train, y_train and X_test, y_test in list form. \
 X_train -> list (text) \
 X_test -> list (text) \
 y_train -> lits label (integer starts from 1) \
-y_test -> lits label (integer starts from 1) \
+y_test -> lits label (integer starts from 1) 
 
 # Define Hyperparameters
 ```python
