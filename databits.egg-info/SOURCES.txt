@@ -11,6 +11,7 @@ databits/loader/__init__.py
 databits/loader/data.py
 databits/model/__init__.py
 databits/model/bert.py
+databits/model/fasttext.py
 databits/model/gru.py
 databits/model/lstm.py
 databits/model/module.py

@@ -6,7 +6,7 @@ def read_requirements(filename):
 
 setup(
     name='databits', 
-    version='1.0.3',   
+    version='1.0.5',   
     packages=find_packages(),  
     install_requires=read_requirements('requirements.txt'),  
     long_description=open('README.md').read(), 

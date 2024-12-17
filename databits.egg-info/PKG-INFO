@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: databits
-Version: 1.0.3
+Version: 1.0.5
 Summary: Text Classifier using LSTM, GRU, and Transformer BERT
 Home-page: https://github.com/Databitss/databits/
 Author: Databits Team
@@ -68,6 +68,7 @@ model.LSTM() # lstm model
 model.GRU() # gru model
 model.TRANFORMER() # tranformer model
 model.BERT() # bert model
+model.FASTTEXT() # fasttext model
 ```
 example, use gru model:
 ```python
