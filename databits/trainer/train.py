@@ -19,7 +19,7 @@ from torch.utils.data import Dataset, DataLoader
 import torch.nn.functional as F
 import math
 
-from databits.model import TransformerEncoder, BERT, GRUModel, LSTMModel
+from databits.model import TransformerEncoder, BERT, GRUModel, LSTMModel, FASTTEXTModel
 from databits.loader import LoaderData
 
 class CreateModel(nn.Module):
@@ -88,6 +88,13 @@ class CreateModel(nn.Module):
     def GRU(self):
         torch.cuda.empty_cache()
         self.model = GRUModel(self.vocab_size, self.embed, self.num_cls, self.n_layers, dropout=self.drp)
+        self.model.to(self.device)
+        self.bert = False
+        return self.model
+
+    def FASTTEXT(self):
+        torch.cuda.empty_cache()
+        self.model = FASTTEXTModel(self.vocab_size, self.embed, self.num_cls, self.n_layers, dropout=self.drp)
         self.model.to(self.device)
         self.bert = False
         return self.model
