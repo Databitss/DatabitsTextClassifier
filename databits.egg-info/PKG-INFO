@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: databits
-Version: 1.0.6
+Version: 2.0.1
 Summary: Text Classifier using LSTM, GRU, and Transformer BERT
 Home-page: https://github.com/Databitss/databits/
 Author: Databits Team

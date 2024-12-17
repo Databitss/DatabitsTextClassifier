@@ -18,4 +18,3 @@ class FASTTEXTModel(nn.Module):
             avg_embeddings = self.dropout(F.leaky_relu(self.hidden(avg_embeddings)))
         out = self.fc(avg_embeddings)
         return out
-        

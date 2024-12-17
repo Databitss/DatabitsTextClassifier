@@ -91,7 +91,7 @@ class CreateModel(nn.Module):
         self.model.to(self.device)
         self.bert = False
         return self.model
-
+    
     def FASTTEXT(self):
         torch.cuda.empty_cache()
         self.model = FASTTEXTModel(self.vocab_size, self.embed, self.num_cls, self.n_layers, dropout=self.drp)
