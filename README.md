@@ -49,6 +49,7 @@ model.LSTM() # lstm model
 model.GRU() # gru model
 model.TRANFORMER() # tranformer model
 model.BERT() # bert model
+model.FASTTEXT() # fasttext model
 ```
 example, use gru model:
 ```python
