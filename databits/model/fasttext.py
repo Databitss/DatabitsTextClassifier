@@ -6,13 +6,13 @@ class FASTTEXTModel(nn.Module):
     def __init__(self, vocab_size, embedding_dim, output_dim, n_layers, dropout=0.1):
         super().__init__()
         self.embedding = nn.Embedding(vocab_size, embedding_dim)
-        self.layers = [nn.Linear(embedding_dim, embedding_dim) for _ in range(n_layers)]
+        self.layers = nn.ModuleList([nn.Linear(embedding_dim, embedding_dim) for _ in range(n_layers)])
         self.fc = nn.Linear(embedding_dim, output_dim)
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):
         embeddings = self.embedding(x)
-        avg_embeddings = embeddings.mean(dim=1).squeeze(1)
+        avg_embeddings = embeddings.mean(dim=1).squeeze(1).to(embeddings.device)
         for layer in self.layers:
             avg_embeddings = self.dropout(F.leaky_relu(layer(avg_embeddings)))
         out = self.fc(avg_embeddings)
