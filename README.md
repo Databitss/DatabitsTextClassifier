@@ -1,6 +1,6 @@
 Text Classifier using LSTM, GRU, and Transformer BERT
 
-# Install Packgae
+# Install Package
 ```python
 !pip install databits
 ```
@@ -47,7 +47,7 @@ model = CreateModel(X_train, y_train,
 ```python
 model.LSTM() # lstm model
 model.GRU() # gru model
-model.TRANFORMER() # tranformer model
+model.TRANSFORMER() # tranformer model
 model.BERT() # bert model
 model.FASTTEXT() # fasttext model
 ```
